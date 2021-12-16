@@ -1,0 +1,67 @@
+body{
+    background-color: #ffeaa7;
+
+}
+
+
+#title{
+    margin: auto;
+    text-align: center;
+    background-color: #55efc4;
+    border-radius: 12px;
+    width: 70%;
+    padding: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+}
+#where{
+    margin: auto;
+    background-color: #81ecec;
+    border-radius: 12px;
+    text-align: center;
+    width: 60%;
+    padding: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.46);
+}
+
+
+#header{
+    margin: auto;
+    background-color: #74b9ff;
+    border-radius: 12px;
+    text-align: center;
+    width: 50%;
+    font-size: 1.6rem;
+    color:white;
+    margin-bottom: 2rem;
+    box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.46);
+}
+
+#mainInfo{
+    margin: auto;
+    background-color: rgb(255, 219, 219);
+    border-radius: 12px;
+    text-align: center;
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.46);
+    border : 2px solid black;
+}
+
+
+#wind, #humidity , #temperature, #cloud{
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    width: 50%;
+    gap : 30px;
+    margin-bottom: 2rem;
+    color:white;
+    background-color: rgb(17, 17, 16);
+}
