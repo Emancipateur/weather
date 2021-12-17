@@ -1,17 +1,37 @@
-const data = fetch(
-  "https://weather-proxy.freecodecamp.rocks/api/current?lat=35&lon=139"
-)
+
+
+let crd = ""
+
+
+  
+  function success(pos) {
+     crd = pos.coords;
+    console.log('Votre position actuelle est :');
+    console.log(`Latitude : ${crd.latitude}`);
+    console.log(`Longitude : ${crd.longitude}`);
+    console.log(`La précision est de ${crd.accuracy} mètres.`);
+  }
+  
+  
+  
+  const data = () => fetch(
+    "https://weather-proxy.freecodecamp.rocks/api/current?lat="+ crd.latitude+"&lon="+crd.longitude+""
+  )
   .then((response) => response.json())
   .then((obj) => {
     return obj;
   })
   .catch((err) => console.log(err));
+  
+  let datas;
+  
+  navigator.geolocation.getCurrentPosition(success);
 
-let datas;
+
+
 
 getDatas = async () => {
-  datas = await data;
-  console.log(datas);
+  datas = await data()
   document.querySelector("#header").innerHTML =
     datas.weather[0].main +
     " / " +
@@ -55,4 +75,8 @@ getDatas = async () => {
 
     `;
 };
-getDatas();
+
+setTimeout( () => getDatas(),200)
+
+
+

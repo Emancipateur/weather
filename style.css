@@ -1,13 +1,23 @@
 body{
-    background-color: #ffeaa7;
+    margin: auto;
+    background-color: #494247;
+    width: 90%;
+
+}
+
+#main-container{
+    background-color: #766B72;
+    height: 100vh;
+    margin-top: 10px;
 
 }
 
 
 #title{
-    margin: auto;
+    margin: auto ;
     text-align: center;
-    background-color: #55efc4;
+    background-color: #141d29;
+    color:white;
     border-radius: 12px;
     width: 70%;
     padding: 12px;
@@ -16,9 +26,10 @@ body{
 }
 #where{
     margin: auto;
-    background-color: #81ecec;
+    background-color: #494247;
     border-radius: 12px;
     text-align: center;
+    color:white;
     width: 60%;
     padding: 12px;
     margin-bottom: 2rem;
@@ -28,7 +39,7 @@ body{
 
 #header{
     margin: auto;
-    background-color: #74b9ff;
+    background-color: #494247;
     border-radius: 12px;
     text-align: center;
     width: 50%;
@@ -40,7 +51,7 @@ body{
 
 #mainInfo{
     margin: auto;
-    background-color: rgb(255, 219, 219);
+    background-color: #494247;
     border-radius: 12px;
     text-align: center;
     width: 80%;
@@ -63,5 +74,5 @@ body{
     gap : 30px;
     margin-bottom: 2rem;
     color:white;
-    background-color: rgb(17, 17, 16);
+    background-color: #141d29
 }
