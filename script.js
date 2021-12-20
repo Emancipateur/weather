@@ -2,8 +2,14 @@
 
 let crd = ""
 
-
-  
+var options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0
+};
+function error(err) {
+  alert(`ERREUR (${err.code}): ${err.message}`);
+}
   function success(pos) {
      crd = pos.coords;
     console.log('Votre position actuelle est :');
@@ -25,7 +31,7 @@ let crd = ""
   
   let datas;
   
-  navigator.geolocation.getCurrentPosition(success);
+  navigator.geolocation.getCurrentPosition(success, error, options);
 
 
 printWhere = () => {
